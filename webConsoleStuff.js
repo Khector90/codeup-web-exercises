@@ -1,23 +1,23 @@
-// var hercules = 3
 //
-// var hercules = 1
 //
-// var littleMermaid = 3
+// let hercules = 1
 //
-// var brotherBear = 5
+// let littleMermaid = 3
 //
-// var price = 0
+// let brotherBear = 5
+//
+// let price = 0
 //
 // price = (hercules + littleMermaid + brotherBear) * 3
 //
 // console.log (price)
 //
 // 3.2
-// var google = 400;
+// let google = 400;
 //
-// var amazon = 380;
+// let amazon = 380;
 //
-// var facebook = 350;
+// let facebook = 350;
 //
 // let price = (google * 6) + (amazon * 4) + (facebook * 10);
 //
