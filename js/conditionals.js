@@ -133,21 +133,22 @@ function analyze(ColorChosen) {
 
 // let totalAmount= prompt("How many schemkels? ");
 
-// function calculateTotal(luckyNumber, totalAmount){
-//     if ( luckyNumber === 0) {
-//     } else if (luckyNumber === 1) {
-//         alert("You lucky number was: " + luckyNumber + "! Your new total is:  " + ((totalAmount) - (totalAmount * .1)))
-//     } else if (luckyNumber === 2){
-//         alert("You lucky number was: " + luckyNumber + "! Your new total is: " + ((totalAmount) - (totalAmount * .25)))
-//     } else if (luckyNumber === 3){
-//         alert("Your lucky number was " + luckyNumber + "! Your new total is: " + ((totalAmount) - (totalAmount * .35)))
-//     } else if (luckyNumber === 4){
-//         alert("Your lucky number was " + luckyNumber + "! Your new total is: "+  ((totalAmount) - (totalAmount * .5)))
-//     } else {
-//         alert("Winner Winner Chicken Dinner");
-//     }
-// }
-//
+function calculateTotal(luckyNumber, totalAmount){
+    if ( luckyNumber === 0) {
+    } else if (luckyNumber === 1) {
+        alert("You lucky number was: " + luckyNumber + "! Your new total is:  " + ((totalAmount) - (totalAmount * .1)))
+    } else if (luckyNumber === 2){
+        alert("You lucky number was: " + luckyNumber + "! Your new total is: " + ((totalAmount) - (totalAmount * .25)))
+    } else if (luckyNumber === 3){
+        alert("Your lucky number was " + luckyNumber + "! Your new total is: " + ((totalAmount) - (totalAmount * .35)))
+    } else if (luckyNumber === 4){
+        alert("Your lucky number was " + luckyNumber + "! Your new total is: "+  ((totalAmount) - (totalAmount * .5)))
+    } else {
+        alert("Winner Winner Chicken Dinner");
+    }
+}
+calculateTotal(2,500)
+
 //
 
 
