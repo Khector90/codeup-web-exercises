@@ -30,8 +30,10 @@
 // Define a function named timesFour that takes in an input and multiples that input by four if it is numeric. If the input is not numeric, then return false.
 function timesFour(){
    input =  prompt("Enter a number to multiple by 4 ")
-    if (input != )
-    return false
+    if (input == NaN);
+    return false;
+} else{
+    input === typeof 2;
 }
 
 console.log(timesFour);
