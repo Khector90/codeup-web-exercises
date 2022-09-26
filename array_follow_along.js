@@ -10,19 +10,19 @@ let side1 = parseInt(prompt("Enter 1st dim: "));
 let side2 = parseInt(prompt("Enter 2nd dim: "));
 let side3 = parseInt(prompt("Enter 3rd dim: "));
 
-function area(){
+function area(){}
     // let side1 = parseInt(prompt("Enter 1st dim: "));
     // let side2 = parseInt(prompt("Enter 2nd dim: "));
     // let side3 = parseInt(prompt("Enter 3rd dim: "));
 
 
-    let s = (side1 * side2 * side3) / 2;
-    // let areaValue = Math.sqrt( s *(s - side1) * (s - side2) * (s - side3));
-
-}
-let areaValue = Math.sqrt( s *(s - side1) * (s - side2) * (s - side3));
-
-console.log(area("The area of the triangle is: ") +(areaValue));
+//     let s = (side1 * side2 * side3) / 2;
+//     // let areaValue = Math.sqrt( s *(s - side1) * (s - side2) * (s - side3));
+//
+// }
+// let areaValue = Math.sqrt( s *(s - side1) * (s - side2) * (s - side3));
+//
+// console.log(area("The area of the triangle is: ") +(areaValue));
 
 //Reverse a String: Write a JS function that accepts a string
 // and returns the string in reverse. example input: codeup, example output: puedoc
@@ -66,5 +66,13 @@ console.log(area("The area of the triangle is: ") +(areaValue));
 // const result = reverseString(string);
 // console.log(result);
 
-
+function evenNumbers(num) {
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    if (array % 2 === 0) {
+        console.log(evenNumbers);
+    } else{
+        evenNumbers(array % 1 === 0)
+        console.log("Not even numbers " + array )
+    }
+}
 
