@@ -27,7 +27,7 @@
     let planetsStringOne = planetsArray.join("<br>");
     console.log(planetsStringOne);
 
-    let planetStringTwo = "<ul><lio>" + planetsArray.join("")
+    let planetStringTwo = "<ul><li>" + planetsArray.join("")
     console.log(planetStringTwo);
 
 })();
