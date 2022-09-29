@@ -28,11 +28,15 @@
 //         console.log(rando + " is odd");
 //     }
 // }
-let string = "";
-for (let i = 1; i <= 9; i++) {
-    for (let  j = 1; j <= i; j++) {
-        string += i;
-    }
-    string = string +"\n"
+// let string = "";
+// for (let i = 1; i <= 9; i++) {
+//     for (let  j = 1; j <= i; j++) {
+//         string += i;
+//     }
+//     string = string +"\n"
+// }
+// console.log(string)
+
+for (let i = 100; i > 0; i-=5) {
+    console.log(i);
 }
-console.log(string)
