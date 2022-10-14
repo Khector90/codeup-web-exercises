@@ -47,10 +47,10 @@
     // TODO: Set text color on every other list item to grey
    let listColor = function (){
      for (let i = 0; i < listItems.length; i++){
-       if(i % 2 === 0){
+       if(i % 2 !== 0){
          listItems[i].style.color = "blue"
        } else {
-         listItems[i].style="color:grey";
+         listItems[0].style="color:grey";
        }
      }
    }
