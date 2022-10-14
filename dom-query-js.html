@@ -8,6 +8,10 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="btn1">You must click it</button>
+<button id="btn2">Click it good</button>
+<button id="btn3">Click it again</button>
+<button id="btn4">And again</button>
 <ul>
   <li data-dbid="1">Item 1</li>
   <li data-dbid="2">Item 2</li>
@@ -33,13 +37,28 @@
     let mainHeader = document.getElementById("main-header");
 
     // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-    mainHeader.innerHTML =  "Javascript is Cool"
+    let listener = function () {
+      mainHeader.innerHTML = "Javascript is Cool"
+    }
+
+     let btn1 = document.getElementById("btn1");
+   btn1.addEventListener("click", listener);
+
+
+
+    // mainHeader.innerHTML = "Javascript is Cool"
+
 
     // TODO: Uncomment the next line and get the sub header element by id
     let subHeader = document.getElementById("sub-header");
 
     // TODO: Set the text color of subHeader to blue
-    subHeader.style.color = 'cornflowerblue';
+    let colorChange = function () {
+      subHeader.style.color = 'cornflowerblue';
+    }
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", colorChange)
+
 
     // TODO: Uncomment the next line and get all list items
     let listItems = document.getElementsByTagName("li")  ;
@@ -54,7 +73,9 @@
        }
      }
    }
-   listColor();
+   let btn3 = document.getElementById("btn3");
+   btn3.addEventListener("click", listColor);
+
 
     // TODO: Set text color of li with dbid = 1 to blue
 
@@ -62,9 +83,12 @@
     let subParagraphs = document.getElementsByClassName("sub-paragraph");
 
     // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-    for (let i = 0; i < subParagraphs.length; i++) {
-      subParagraphs[i].innerHTML = "Mission Accomplished"
+    let mission = function () {
+      subParagraphs[0].innerHTML = "Mission Accomplished"
     }
+    let btn4 = document.getElementById("btn4");
+    btn4.addEventListener("click",mission)
+
   })();
 </script>
 </body>
