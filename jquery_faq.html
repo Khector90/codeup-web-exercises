@@ -21,6 +21,7 @@
         <li>Choke Canyon</li>
         <li>Davis Mountains</li>
         <li>Enchanted Rock</li>
+    </ul>
 <!--    <dd>My dog is named Jango</dd>-->
         <h3>State Parks of Texas</h3>
         <ul id="state-parks-texas2" class="ul">
@@ -29,6 +30,7 @@
             <li>Choke Canyon</li>
             <li>Davis Mountains</li>
             <li>Enchanted Rock</li>
+        </ul>
 <!--    <dd>My dog is named Jango</dd>-->
             <h3>State Parks of Texas</h3>
             <ul id="state-parks-texas3" class="ul">
@@ -37,6 +39,7 @@
                 <li>Choke Canyon</li>
                 <li>Davis Mountains</li>
                 <li>Enchanted Rock</li>
+            </ul>
 <!--    <dd>My dog is named Jango</dd>-->
 <!--    <dd>My dog is named Jango</dd>-->
 <!--    <dd>My dog is named Jango</dd>-->
@@ -53,9 +56,9 @@
 
 
     // $(document).ready(function(){
-        $('.button').click(function(){
+        $('#button').click(function(){
             $('ul').each(function (){
-            $('ul').children('ul').last().css('background-color', '#FF0');
+            $(this).children().last().css('background-color', '#FF0');
         })
         })
         // })
