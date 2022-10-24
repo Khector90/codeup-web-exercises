@@ -11,40 +11,40 @@
 </head>
 <body>
 <button id="button" class="button">Hit this</button>
-<dl>
-    <dt>10 FAQs about random stuff</dt>
-    <dd>My dog is named Jango</dd>
+<!--<dl>-->
+<!--    <dt>10 FAQs about random stuff</dt>-->
+<!--    <dd>My dog is named Jango</dd>-->
     <h3>State Parks of Texas</h3>
-    <ul id="state-parks-texas1">
+    <ul id="state-parks-texas1" class="ul">
         <li>Abilene</li>
         <li>Big Bend</li>
         <li>Choke Canyon</li>
         <li>Davis Mountains</li>
         <li>Enchanted Rock</li>
-    <dd>My dog is named Jango</dd>
+<!--    <dd>My dog is named Jango</dd>-->
         <h3>State Parks of Texas</h3>
-        <ul id="state-parks-texas2">
+        <ul id="state-parks-texas2" class="ul">
             <li>Abilene</li>
             <li>Big Bend</li>
             <li>Choke Canyon</li>
             <li>Davis Mountains</li>
             <li>Enchanted Rock</li>
-    <dd>My dog is named Jango</dd>
+<!--    <dd>My dog is named Jango</dd>-->
             <h3>State Parks of Texas</h3>
-            <ul id="state-parks-texas3">
+            <ul id="state-parks-texas3" class="ul">
                 <li>Abilene</li>
                 <li>Big Bend</li>
                 <li>Choke Canyon</li>
                 <li>Davis Mountains</li>
                 <li>Enchanted Rock</li>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-    <dd>My dog is named Jango</dd>
-</dl>
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--    <dd>My dog is named Jango</dd>-->
+<!--</dl>-->
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossOrigin="anonymous"></script>
@@ -52,24 +52,26 @@
         "use strict";
 
 
-
-
-        $('button').click(function(event) {
-            $('li').next().css('background-color', '#FF0');
+    // $(document).ready(function(){
+        $('.button').click(function(){
+            $('ul').each(function (){
+            $('ul').children('ul').last().css('background-color', '#FF0');
         })
-
-        // $('#national-parks-heading').last().css('background-color', 'salmon');
-
-        // $('li').css('background-color', '#FF0');
+        })
+        // })
 
     // $('dd').addClass('invisible');
     //
     //     $('.invisible').css('visibility', 'hidden')
 
-        // $('dt').click(function(event) {
-        //     $('dd').toggleClass('invisible')
-        // })
+        $('h3').click(function(){
+            $(this).next().children().css('font-weight','bold');
+        })
 
+
+        $('li').click(function (){
+            $(this).parent().children().first().css('color','blue');
+        })
 
 
 </script>
