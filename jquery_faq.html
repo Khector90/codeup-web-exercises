@@ -10,11 +10,33 @@
     </style>
 </head>
 <body>
+<button id="button" class="button">Hit this</button>
 <dl>
     <dt>10 FAQs about random stuff</dt>
     <dd>My dog is named Jango</dd>
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas1">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
     <dd>My dog is named Jango</dd>
+        <h3>State Parks of Texas</h3>
+        <ul id="state-parks-texas2">
+            <li>Abilene</li>
+            <li>Big Bend</li>
+            <li>Choke Canyon</li>
+            <li>Davis Mountains</li>
+            <li>Enchanted Rock</li>
     <dd>My dog is named Jango</dd>
+            <h3>State Parks of Texas</h3>
+            <ul id="state-parks-texas3">
+                <li>Abilene</li>
+                <li>Big Bend</li>
+                <li>Choke Canyon</li>
+                <li>Davis Mountains</li>
+                <li>Enchanted Rock</li>
     <dd>My dog is named Jango</dd>
     <dd>My dog is named Jango</dd>
     <dd>My dog is named Jango</dd>
@@ -29,13 +51,24 @@
 <script>
         "use strict";
 
-    $('dd').addClass('invisible');
+
+
+
+        $('button').click(function(event) {
+            $('li').next().css('background-color', '#FF0');
+        })
+
+        // $('#national-parks-heading').last().css('background-color', 'salmon');
+
+        // $('li').css('background-color', '#FF0');
+
+    // $('dd').addClass('invisible');
     //
     //     $('.invisible').css('visibility', 'hidden')
 
-        $('dt').click(function(event) {
-            $('dd').toggleClass('invisible')
-        })
+        // $('dt').click(function(event) {
+        //     $('dd').toggleClass('invisible')
+        // })
 
 
 
