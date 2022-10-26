@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <h1 text align="center">MY FIRST MAP</h1>
+<!--    added this button to hide shit, still figuring out how to get it to work-->
+<!--    <button id="button" class="button">Lost in the Sauce</button>-->
+
     <meta charset="UTF-8">
     <title>Mapbox</title>
+
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
     <style>
         #map{
@@ -30,6 +34,7 @@
         center: [-85.313828, 35.081980]
     });
 
+
     //TODO: Set zoom on your own with a map.setZoom call in your console
     //map.jumpTo, map.flyTo look them up zoom: 14
  // let marker = new mapboxgl.Marker()
@@ -50,11 +55,16 @@
 
         let marker2 = new mapboxgl.Marker()
             .setLngLat(result)
+            // .setPopup(
+                // new mapboxgl.Popup({ offset: 25 }) // add popups
+                //     .setHTML("<h3>Pat's BBq Best BBQ</h3>" +
+                //         "<p>Best Bbq</p>")
             .addTo(map)
 
         let popup2 = new mapboxgl.Popup()
             .setLngLat(result)
-            .setHTML("<p>Pat's BBq Best BBQ</p>")
+            .setHTML("<h3>Pat's BBq Best BBQ</h3>" +
+                "<p>Best Bbq</p>")
             .addTo(map)
     })
 
@@ -67,7 +77,8 @@
 
         let popup3 = new mapboxgl.Popup()
             .setLngLat(result)
-            .setHTML("<p>El Embargo Best Cubano</p>")
+            .setHTML("<h3>El Embargo</h3>" +
+                "<p> Best Cubano</p>")
             .addTo(map)
     })
 

@@ -3,17 +3,19 @@
 <head>
     <title>Online Store</title>
 </head>
-<body>
+<body class="bg-secondary container">
 
 <h1>My Tool Store</h1>
-
-<table id="products">
+<div class="text-align d-flex justify-content-center my-3">
+    <button id="refresh" class="btn btn primary" type="button">click it</button>
+</div>
+<table id="products" class="border border-dark w-100">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Categories</th>
+            <th class="border border-dark bg-danger text-white">Title</th>
+            <th class="border border-dark bg-danger text-white">Quantity</th>
+            <th class="border border-dark bg-danger text-white">Price</th>
+            <th class="border border-dark bg-danger text-white">Categories</th>
         </tr>
     </thead>
     <tbody id="insertProducts"></tbody>
@@ -25,12 +27,23 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    $.ajax( "data/inventory.json",{
-        dataType: 'json',
-        title: url,
-        quantity: data,
-        categories: success
-    });
+    function updatePage(){
+        $.get('data/inventory.json').done(function (data){
+            let invent = '';
+            data.forEach(function(item){
+                invent += '<tr>';
+                invent += '<th class="border border-dark bg-danger text-white">' + item.title + '</th>';
+                invent += '<th class="border border-dark bg-danger text-white">' + item.quantity + '</th>';
+                invent += '<th class="border border-dark bg-danger text-white">' + item.price + '</th>';
+                invent += '<th class="border border-dark bg-danger text-white">' + item.catergories + '</th>';
+                invent += '</tr>';
+
+            });
+            $('#insertProducts').html(invent);
+        });
+    }
+    $('#refresh').click(updatePage);
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
