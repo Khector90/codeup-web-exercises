@@ -7,6 +7,8 @@
 
 </head>
 <body>
+<h1>Blog</h1>
+<button id="refresh" class="btn btn primary" type="button">click it</button>
 <div id="posts"></div>
 
 
@@ -15,6 +17,9 @@
 <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
 <script>
         "use strict";
+        $.get('data/blog.json').done(function (data){
+
+        })
 
 
 
