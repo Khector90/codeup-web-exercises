@@ -40,16 +40,12 @@ const users = [
 
 // 2. Use .filter to create an array of user objects where each user object has at least 3 languages in the languages array.
 
+let three = users.filter(function(user){
+    return user.languages.length >=3;
+})
+console.log(three);
 
-// let three = users.filter(users => languages.length > 3 )
-//
-// console.log(three)
 
-
-// function checkLang (language){
-//     return language >= ;
-// }
-// console.log(checkLang(email))
 
 // 3. Use .map to create an array of strings where each element is a user's email address
 
@@ -59,3 +55,32 @@ let emails = users.map(users =>({
  console.log(emails)
 
 // 4. Use .reduce to get the total years of experience from the list of users. Once you get the total of years you can use the result to calculate the average.
+let totalYear =users.reduce(function (previousValue, currentValue){
+    return previousValue + currentValue.yearsOfExperience
+    }
+,0)
+
+console.log("total years summed:" +totalYear);
+console.log(`average exp math: ${totalYear / users.length}`);
+
+// 5.Use .reduce to get the longest email from the list of users.
+let longest = users.reduce(function(previousValue, currentValue){
+
+    if (currentValue.email.length > previousValue.length){
+        previousValue = currentValue.email
+    }
+    return previousValue
+}, "")
+
+console.log(longest);
+// 6. Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
+
+let string = users.reduce(function (previousValue, currentValue, currentIndex, myarray){
+    let punctuation = ",";
+    if (currentIndex === myarray.length - 1){
+        punctuation = "."
+    }
+    return previousValue + currentValue.name + punctuation + " ";
+}, "your instructors are : ")
+
+console.log(string);
