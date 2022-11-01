@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map - Filter - Reduce</title>
+</head>
+<body>
+
+<script>
+
+    // ~ Filter ~
+
+
+    
+
+ let myFavNums =[7, 222,21,13];
+
+ let myFavooriteEvenNumber = myFavNums.filter (function
+     (element){
+     return element % 2 === 0;
+    })
+
+    console.log(myFavNums);
+ console.log("Only Evens please:");
+ console.log(arrowExample);
+
+
+
+ //TODO: Create an array of your favorite numbers or an array of numbers - use filter to see ONLY odd or ONLY even numbers in a new array
+
+ let citiesTraveled = [
+     {
+     name: "Houston",
+     state: "Texas"
+ },{
+     name: "New York City",
+     state: "New York"
+ },{
+     name: "Nashville",
+     state: "Tennessee"
+ } ,
+     {
+         name: "Dallas",
+         state: "Texas"
+     }
+ ]
+let notTexasCities = citiesTraveled.filter(function
+    (ele){
+    return ele.state !== "Texas";
+})
+
+   console.log(citiesTraveled)
+    console.log("how about non-Texas cities?")
+    console.log(notTexasCities)
+
+
+
+
+
+    //TODO: Create an array of objects in your environment representing cities you've traveled to or would be interested in traveling to within the United States.
+    let citiesTraveled2 = [
+        {
+            name: "Houston",
+            state: "Texas"
+        },{
+            name: "New York City",
+            state: "New York"
+        },{
+            name: "Nashville",
+            state: "Tennessee"
+        } ,
+        {
+            name: "Dallas",
+            state: "Texas"
+        }
+    ]
+    let notTexasCities2 = citiesTraveled2.filter(function
+        (letter){
+        return ele.state !== "New York";
+    })
+
+    console.log(citiesTraveled2)
+    console.log("how about non-New York cities?")
+    console.log(notTexasCities2)
+
+    //TODO: Can you filter that array of objects in an interesting way like I did?
+
+    // ~ Map ~
+
+
+ let nums = [2,4,6,8]
+
+    let numsPlusOne = nums.map(function (element){
+     return element + 1;
+    })
+
+    console.log(nums);
+    console.log("plus one please");
+    console.log(numsPlusOne);
+
+
+//TODO: Create an array of nums - use .map() to change your array of nums by returning an array where each num has been multiplied by 10
+
+    let numTimesTen = nums.map((e) => e * 100);
+
+    console.log(numTimesTen);
+
+ let people = [
+     {firstName: "Kenny", lastName: "Howell" },
+     {firstName: "Lola", lastName: "Castillo"},
+     {firstName: "Laura", lastName: "Ruiz"}
+ ]
+ //   what if: I want to use map to make a string of the firsName and lastName combined?
+
+    let namesConcated = people.map(function (element){
+        return element.firstName + " " + element.lastName
+    })
+
+    console.log(namesConcated);
+
+ // ~ Reduce ~
+
+    let yearSales = [8, 10, 12, 13, 10, 6, 15, 10, 9, 16]
+
+    // how many total sales do i have form sales so far this year
+
+    // let buck = 0;
+    // for (let i = 0; i < yearlySales.length; i++){
+    //     bucket += yearSales[i];
+    // }
+    //
+
+    let salesToDate = yearSales.reduce(function( total, element){
+        console.log ('the toast is currently ${total} and my current element value is ${element}');
+        return total + element;
+    })
+
+    console.log(yearSales)
+    console.log()
+    
+    //TODO: Create your own array of figures to "reduce" to a single value - sum up a series of numbers like I did, or you can feel free to take your practice in a different direction!
+
+</script>
+</body>
+</html>
