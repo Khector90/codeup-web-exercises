@@ -86,3 +86,9 @@ let list = '<ul>';
 //   list += '<li>' + developer + '</li>';
 // });
 // list += '</ul>';
+
+for (let developer of developers) {
+  list += `<li> ${developer} </li>`;
+  list += '</ul>';
+  console.log(developer);
+}
