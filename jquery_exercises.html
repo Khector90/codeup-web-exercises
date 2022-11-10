@@ -16,6 +16,34 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/jquery_exercises.js">
+    // $(function() {
+    //     alert( 'The DOM has finished loading!' );
+    // });
+
+    // let header= $('#header').html();
+    // alert(header);
+
+    // $(".li").css('font-size', '20px');
+
+    // $(".head, paragraph, li").css('background-color', '#FF0')
+
+
+    $('#header').click(function() {
+        $(this).css('background-color', '#FF0');
+    })
+
+    $('p').dblclick(function() {
+        $(this).css('font-size', '18px');
+    })
+
+    $('li').hover(
+        function() {
+            $(this).css('color', 'red');
+        },
+        function() {
+            $(this).css('color', 'black');
+        }
+    );
 
 </script>
 </body>

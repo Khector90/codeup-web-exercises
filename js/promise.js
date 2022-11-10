@@ -1,11 +1,11 @@
-"use Strict"
 
-// fetch(url, {headers: {'Authorization': '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'}})
+
+
 
 // Create a function that accepts a GitHub username, and returns a promise that resolves returning just the
 // date of the last commit that user made. Reference the github api documentation to achieve this
 
-const baseUrl = `https://github.com/Khector90/codeup-web-exercises`;
+const baseUrl = `https://api.github.com/users/Khector90/events`;
 
 
  function lastCommit(){
