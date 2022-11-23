@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--    doing a nasa api because I won't do it I have to do weather-->
     <meta charset="UTF-8">
-    <title>Weather App - JavaScript</title>
-    <link rel="stylesheet" href="font/Rimouski.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css">
+    <title>Nasa API Picture of the Day</title>
 </head>
 <body>
+    <main class="container">
+        <h1>NASA's Astronomy Picture of the Day</h1>
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <section class="picture-explanation-container">
+            <img src="" id="picture" alt="astronomy image by NASA" />
+            <p id="explanation"></p>
+        </section>
+    </main>
 
+
+<script type="text/javascript" src="js/config.js"></script>
 <script src="js/weather_map.js"></script>
-<script src="js/keys.js"></script>
+
 </body>
 </html>

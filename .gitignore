@@ -8,3 +8,5 @@
 /dataSources.local.xml
 #Api keys
 /js/keys.js
+#nasa api key here
+/js/config.js
